@@ -87,9 +87,16 @@ function gotoPage(page) {
 	document.querySelector("main").innerHTML = content;
 }
 
+function scrollToProject(hashName) {
+	gotoPage('Projects');
+	let element = document.getElementById(hashName);
+	element.scrollIntoView();
+    //location.hash = "#" + hashName;
+}
+
 class HomePage {
 	static render() {
-		let content = `${HomePage._about()}<br>${HomePage._projects()}${HomePage._skills()}<br>${HomePage._contact()}`
+		let content = `${HomePage._about()}${HomePage._projects()}${HomePage._skills()}<br>${HomePage._contact()}`
 		return content;
 	}
 
@@ -111,10 +118,10 @@ class HomePage {
 		let content = `<div class="project-section">
           <h2>Projects</h2>
           <ul>
-            <li><a href="https://github.com/jfawcet5/CIS433-CourseProject">Secure Messenger Application</a></li>
-            <li><a href="https://github.com/jfawcet5/CIS415-Project3">Publisher/Subscriber Server</a></li>
-            <li><a href="https://github.com/jfawcet5/Yoon">Open-world RPG Game</a></li>
-            <li><a href="https://github.com/maxjhop/VigenereVisualization">Vigenere Cipher Visualization Tool</a></li>
+            <li><button class="text-button" onclick="scrollToProject('messenger-project')">Secure Messenger Application</button></li>
+            <li><button class="text-button" onclick="scrollToProject('pub-sub-project')">Publisher/Subscriber Server</button></li>
+            <li><button class="text-button" onclick="scrollToProject('yoon-project')">Open-world RPG Game</button></li>
+            <li><button class="text-button" onclick="scrollToProject('cipher-visualization-project')">Vigenere Cipher Visualization Tool</button></li>
           </ul>
         </div>`;
 		return content;
@@ -246,7 +253,7 @@ class ProjectsPage {
 	static _projList() {
 		let content = `
 		<div class="project-list">
-			<div class="project">
+			<div class="project" id="messenger-project">
 				<h2>
 				  <a href="https://github.com/jfawcet5/CIS433-CourseProject"><strong>Secure Messenger Application</strong></a>
 				</h2>
@@ -257,7 +264,7 @@ class ProjectsPage {
 			</div>
 			<div class="spacer"></div>
 
-			<div class="project">
+			<div class="project" id="cipher-visualization-project">
 				<h2>
 				  <a href="https://github.com/maxjhop/VigenereVisualization"><strong>Vigenere Cipher Visualization Tool</strong></a>
 				</h2>
@@ -268,7 +275,7 @@ class ProjectsPage {
 			</div>
 			<div class="spacer"></div>
 
-			<div class="project">
+			<div class="project" id="yoon-project">
 				<h2><a href="https://github.com/jfawcet5/Yoon"><strong>Open-world RPG Game</strong></a></h2>
 				<div class="box p1"><br><br>Project screenshot goes here</div>
 				<div class="project-description">
@@ -277,7 +284,7 @@ class ProjectsPage {
 			</div>
 			<div class="spacer"></div>
 
-			<div class="project">
+			<div class="project" id="pub-sub-project">
 				<h2>
 				  <a href="https://github.com/jfawcet5/CIS415-Project3"><strong>Publisher/Subscriber Server</strong></a>
 				</h2>

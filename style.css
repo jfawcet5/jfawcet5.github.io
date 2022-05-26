@@ -21,34 +21,12 @@ body {
 	flex-wrap: wrap;
 }
 
-h2 {
-	font-size: 1.5em;
-}
-
-p {
+p, ul {
 	font-size: 1.2rem;
 }
 
-ul {
-	font-size: 1.2rem;
-}
-
-.whitespace {
-	flex-basis: 1fr;
-}
-
-.content {
-	flex-basis: 60em;
-	padding: 1em 1em 0em 1em;
-	background-color: floralwhite;
-}
-
-header h1, nav {
-	display: inline;
-}
-
-nav {
-	float: right;
+h2, p {
+	margin: 0;
 }
 
 a {
@@ -57,33 +35,21 @@ a {
 	font-weight: normal;
 }
 
-.nav-button {
+.content {
+	flex-basis: 60em;
+	padding: 1em 1em 0.5em 1em;
+	background-color: floralwhite;
+}
+
+.text-button {
 	border: none;
 	color: black;
 	background-color: transparent;
 	font-size: 1.25rem;
-	margin: 0.3em;
 }
 
-.nav-button:hover {
+.text-button:hover {
 	cursor: pointer;
-}
-
-h2, p {
-	margin: 0;
-}
-
-.about-section {
-	display: grid;
-	grid-template: 2em 3fr / 3fr 1fr;
-	/*grid-row-gap: 1em;*/
-	grid-gap: 1em 0.5em;
-	margin: 2em 0em 0em 0em;
-}
-
-.about-p {
-	grid-row: 2 / 3;
-	grid-column: 1 / 2;
 }
 
 .box {
@@ -104,6 +70,36 @@ h2, p {
 	margin: 2em 0em 0em 0em;
 }
 
+/***** Header section styles *****/
+
+header h1, nav {
+	display: inline;
+}
+
+nav {
+	float: right;
+}
+
+.nav-button {
+	font-size: 1.25rem;
+	margin: 0.3em;
+}
+
+/***** Home page styles *****/
+
+.about-section {
+	display: grid;
+	grid-template: 2em 3fr / 3fr 1fr;
+	/*grid-row-gap: 1em;*/
+	grid-gap: 1em 0.5em;
+	margin: 2em 0em 0em 0em;
+}
+
+.about-p {
+	grid-row: 2 / 3;
+	grid-column: 1 / 2;
+}
+
 .skill-list i {
 	margin: 0.2em 0.3em;
 }
@@ -112,12 +108,12 @@ h2, p {
 	font-weight: bold;
 }
 
-/* Projects page styles */
+/***** Projects page styles *****/
+
 .spacer {
-	width: 100%;
 	height: 0.1rem;
 	background-color: black;
-	margin: 5px 0px;
+	margin: 0.5em 1em;
 }
 
 .project {
@@ -135,7 +131,8 @@ h2, p {
 	margin: 1.5em 0 0 0;
 }
 
-/* Skills page styles */
+/***** Skills page styles *****/
+
 .skills-grid {
 	display: grid;
 	grid-template: 1fr 3fr / 1fr 1fr;
@@ -171,10 +168,4 @@ h2, p {
 .percent-bar {
 	height: 100%;
 	background-color: blue;
-}
-
-.loss {
-	float: right;
-	height: 100%;
-	background-color: red;
 }

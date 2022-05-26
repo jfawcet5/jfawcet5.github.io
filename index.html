@@ -6,6 +6,7 @@
     <link href="./style.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/598e67e6c3.js" crossorigin="anonymous"></script>
     <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   
   <body>
@@ -14,9 +15,9 @@
       <header>
         <h1>Joshua Fawcett<h1>
         <nav>
-          <button class="nav-button" onclick="gotoPage('Home')">Home</button>
-          <button class="nav-button" onclick="gotoPage('Projects')">Projects</button>
-          <button class="nav-button" onclick="gotoPage('Skills')">Skills</button>
+          <button class="nav-button text-button" onclick="gotoPage('Home')">Home</button>
+          <button class="nav-button text-button" onclick="gotoPage('Projects')">Projects</button>
+          <button class="nav-button text-button" onclick="gotoPage('Skills')">Skills</button>
         </nav>
       </header>
       
@@ -26,22 +27,21 @@
           <p class="about-p">Hi, I'm Joshua Fawcett. I am currently a senior at the University of Oregon, majoring in Computer and Information Science and minoring in Mathemetics. I'm a life-long learner who loves to read textbooks, write code, tackle challenging problems, and help friends with their math, physics, and writing.<br><br>In my free time, I enjoy spending time with friends and family, bowling, hiking, and playing/making video games.<br><br>Some of my current reading material includes: <span id="cycle-span" style="opacity: 0;"></span></p>
           <div class="box"><br><br>Picture or cool icon goes here</div>
         </div>
-        <br>
         
         <div class="project-section">
           <h2>Projects</h2>
           <ul>
             <li>
-              <a href="https://github.com/jfawcet5/CIS433-CourseProject">Secure Messenger Application</a>
+              <button class="text-button" onclick="scrollToProject('messenger-project')">Secure Messenger Application</button>
             </li>
             <li>
-              <a href="https://github.com/jfawcet5/CIS415-Project3">Publisher/Subscriber Server</a>
+              <button class="text-button" onclick="scrollToProject('pub-sub-project')">Publisher/Subscriber Server</button>
             </li>
             <li>
-              <a href="https://github.com/jfawcet5/Yoon">Open-world RPG Game</a>
+              <button class="text-button" onclick="scrollToProject('yoon-project')">Open-world RPG Game</button>
             </li>
             <li>
-              <a href="https://github.com/maxjhop/VigenereVisualization">Vigenere Cipher Visualization Tool</a>
+              <button class="text-button" onclick="scrollToProject('cipher-visualization-project')">Vigenere Cipher Visualization Tool</button>
             </li>
           </ul>
         </div>
