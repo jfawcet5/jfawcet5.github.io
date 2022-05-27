@@ -192,7 +192,7 @@ class SkillsPage {
 	static _langList() {
 		let content = `            
 		<div class="language-list">
-            <h3>Languages</h3>
+            <h3 style="margin: 0em 0em 0.5em 0em">Languages</h3>
             <div class="languages">
                 <p>Python
                 	<div class="skill-bar"><div class="percent-bar" style="width: 85%"></div></div>
@@ -232,7 +232,7 @@ class SkillsPage {
 	                <li>Git</li>
 	                <li>Github</li>
 	                <li>Command Line</li>
-	                <li>VIM</li>
+	                <li>Vim</li>
 	                <li>Unity</li>
 	                <li>MS Office</li>
 	                <li>Sqlite</li>

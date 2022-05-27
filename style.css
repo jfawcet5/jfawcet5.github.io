@@ -5,10 +5,10 @@
 
 html {
 	background: url("./images/bg2.jpg") no-repeat center center fixed;
-	background-repeat: no-repeat;
 	image-rendering: -webkit-optimize-contrast;
 	background-size: cover;
 	height: 100%;
+	width: 100%;
 	font-size: 1rem;
 }
 
@@ -35,6 +35,12 @@ a {
 	font-weight: normal;
 }
 
+button {
+	border: none;
+	color: black;
+	background-color: transparent;
+}
+
 .content {
 	flex-basis: 60em;
 	padding: 1em 1em 0.5em 1em;
@@ -42,9 +48,6 @@ a {
 }
 
 .text-button {
-	border: none;
-	color: black;
-	background-color: transparent;
 	font-size: 1.25rem;
 }
 
@@ -54,12 +57,13 @@ a {
 
 .box {
 	background-color: blue;
-	grid-area: 1 / 2 / 3 / 2;
-	border: solid 2px black;
+	/*grid-area: 1 / 2 / 3 / 2;
+	border: solid 2px black;*/
 	height: 200px;
 	width: 200px;
-	border-radius: 33%;
+	border-radius: 25%;
 	text-align: center;
+	margin: 4px;
 }
 
 .project-section {
@@ -81,18 +85,27 @@ nav {
 }
 
 .nav-button {
-	font-size: 1.25rem;
+	font-size: 20px;
 	margin: 0.3em;
 }
 
 /***** Home page styles *****/
 
 .about-section {
-	display: grid;
+	/*display: grid;
 	grid-template: 2em 3fr / 3fr 1fr;
 	/*grid-row-gap: 1em;*/
 	grid-gap: 1em 0.5em;
 	margin: 2em 0em 0em 0em;
+}
+
+/*
+.about-section h2 {
+	margin: 0em 0em 0.5em 0em;
+}*/
+
+.right {
+	float: right;
 }
 
 .about-p {
@@ -169,3 +182,117 @@ nav {
 	height: 100%;
 	background-color: blue;
 }
+
+
+/* Media Queries Below This Line */
+
+/******* Begin Media Query: Screen width <= 530 px *******/
+@media only screen and (max-width: 530px) {
+	h1 {
+		font-size: 1.1rem;
+	}
+
+	h2 {
+		font-size: 1rem;
+		margin: 0em 0em 0.5em 0em;
+	}
+
+	p, ul {
+		font-size: 0.8rem;
+	}
+
+	.content {
+		/*flex-basis: 60em;*/
+		padding: 1em 1em 0.5em 1em;
+		background-color: floralwhite;
+		height: fit-content;
+		align-self: center;
+	}
+
+	/***** Header section styles *****/
+
+	header h1, nav {
+		display: inline;
+	}
+
+	nav {
+		float: right;
+	}
+
+	.nav-button {
+		font-size: 14px;
+		margin: 0px 1px;
+		padding: 0px 3px;
+	}
+
+	.text-button {
+		border: none;
+		color: black;
+		background-color: transparent;
+		font-size: 14px;
+	}
+
+	/***** Home page styles *****/
+
+	.about-section {
+		/*display: grid;
+		grid-template: 2em 3fr / 3fr 1fr;
+		/*grid-row-gap: 1em;*/
+		/*grid-gap: 0em 0.5em;*/
+		margin: 1em 0em 0em 0em;
+	}
+
+	.about-p {
+		/*grid-row: 2 / 3;
+		grid-column: 1 / 2;*/
+		/*text-align: justify;*/
+	}
+
+	.skill-list {
+		font-size: 11px;
+	}
+
+	.contact-section a {
+		font-weight: bold;
+	}
+
+	.box {
+		background-color: blue;
+		/*grid-area: 1 / 2 / 3 / 2;
+		border: solid 2px black;*/
+		height: 100px;
+		width: 100px;
+		margin: 4px;
+	}
+	/***** Projects page styles *****/
+
+	.project-section ul {
+		margin: 0em 0em 0em -1em;
+	}
+
+	i {
+		width: 10px;
+	}
+	/*
+	.spacer {
+		height: 0.1rem;
+		background-color: black;
+		margin: 0.5em 1em;
+	}
+
+	.project {
+		display: grid;
+		grid-template: 3rem 3fr / 1fr 2fr;
+		grid-row-gap: 1em;
+	}
+
+	.p1 {
+		grid-area: 2 / 1 / 3 / 2;
+	}
+
+	.project-description {
+		grid-area: 1 / 2 / 3 / 3;
+		margin: 1.5em 0 0 0;
+	}*/
+}
+/******* End Media Query: Screen width <= 530 px *******/
