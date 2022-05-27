@@ -103,13 +103,12 @@ class HomePage {
 	static _about() {
 		let content = `<div class="about-section">
           <h2>About</h2>
-          <p class="about-p">Hi, I'm Joshua Fawcett. I am currently a senior at the University of Oregon, 
-          majoring in Computer and Information Science and minoring in Mathemetics. I'm a life-long learner 
-          who loves to read textbooks, write code, tackle challenging problems, and help friends with their 
-          math, physics, and writing.<br><br>In my free time, I enjoy spending time with friends and family, 
-          bowling, hiking, and playing/making video games.<br><br>Some of my current reading material includes: 
-          <span id="cycle-span" style="opacity: 0;"></span></p>
-          <div class="box"><br><br>Picture or cool icon goes here</div>
+          <img class="box right" />
+          <p class="about-p">Hi, I'm Joshua Fawcett. I am currently a senior at the University of Oregon, majoring in 
+          Computer and Information Science and minoring in Mathemetics. I'm a life-long learner who loves to read textbooks, 
+          write code, tackle challenging problems, and help friends with their math, physics, and writing.<br><br>In my free 
+          time, I enjoy spending time with friends and family, bowling, hiking, and playing/making video games.<br><br>Some 
+          of my current reading material includes: <span id="cycle-span" style="opacity: 0;"></span></p>
         </div>`
 		return content;
 	}
