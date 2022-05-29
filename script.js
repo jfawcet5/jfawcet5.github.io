@@ -265,7 +265,7 @@ class ProjectsPage {
 			<div class="project" id="cipher-visualization-project">
 				<h2>Vigenere Cipher Visualization Tool</h2>
 				<a href="https://github.com/maxjhop/VigenereVisualization">
-					<img class="box project-display" src="images/VigenereVisualization.png" />
+					<img class="box project-display" src="images/vigenerevisualization.png" />
 				</a>
 				<div class="project-description">
 					<p>Description goes here</p>
