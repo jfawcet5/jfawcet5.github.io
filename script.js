@@ -91,7 +91,6 @@ function scrollToProject(hashName) {
 	gotoPage('Projects');
 	let element = document.getElementById(hashName);
 	element.scrollIntoView();
-    //location.hash = "#" + hashName;
 }
 
 class HomePage {
@@ -158,17 +157,17 @@ class HomePage {
 	}
 }
 
-
 class SkillsPage {
 	static render() {
 		let content = `
 		<div class="skills-section">
       		<h2>Skills</h2>
-        	<div class="skills-grid">
+        	<div id="skills-grid" class="skills-grid">
         		${SkillsPage._osList()}
         		${SkillsPage._langList()}
         		${SkillsPage._toolList()}
         	</div>
+        	<h2><a href='images/Joshua_Fawcett_Resume.pdf' target='_blank'><strong>Click here for resume</strong></a></h2>
     	</div>`;
 
 		return content;
@@ -264,10 +263,10 @@ class ProjectsPage {
 			<div class="spacer"></div>
 
 			<div class="project" id="cipher-visualization-project">
-				<h2>
-				  <a href="https://github.com/maxjhop/VigenereVisualization"><strong>Vigenere Cipher Visualization Tool</strong></a>
-				</h2>
-				<div class="box p1"><br><br>Project screenshot goes here</div>
+				<h2>Vigenere Cipher Visualization Tool</h2>
+				<a href="https://github.com/maxjhop/VigenereVisualization">
+					<img class="box project-display" src="images/VigenereVisualization.png" />
+				</a>
 				<div class="project-description">
 					<p>Description goes here</p>
 				</div>
@@ -275,8 +274,10 @@ class ProjectsPage {
 			<div class="spacer"></div>
 
 			<div class="project" id="yoon-project">
-				<h2><a href="https://github.com/jfawcet5/Yoon"><strong>Open-world RPG Game</strong></a></h2>
-				<div class="box p1"><br><br>Project screenshot goes here</div>
+				<h2>Open-world RPG Game</strong></h2>
+				<a href="https://github.com/jfawcet5/Yoon">
+					<img class="box project-display" src="images/yoon.png" />
+				</a>
 				<div class="project-description">
 					<p>Description goes here</p>
 				</div>

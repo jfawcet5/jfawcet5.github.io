@@ -89,6 +89,10 @@ nav {
 	margin: 0.3em;
 }
 
+.nav-button:hover {
+	cursor: pointer;
+}
+
 /***** Home page styles *****/
 
 .about-section {
@@ -144,6 +148,12 @@ nav {
 	margin: 1.5em 0 0 0;
 }
 
+.project-display {
+	height: 300px;
+	width: 300px;
+	border-radius: 1px;
+}
+
 /***** Skills page styles *****/
 
 .skills-grid {
@@ -151,6 +161,8 @@ nav {
 	grid-template: 1fr 3fr / 1fr 1fr;
 	margin: 1em 0 0 0;
 	/*font-size: 1.5em;*/
+	position: relative;
+	left: auto;
 }
 
 .skills-grid h3 {
@@ -182,7 +194,6 @@ nav {
 	height: 100%;
 	background-color: blue;
 }
-
 
 /* Media Queries Below This Line */
 
@@ -243,7 +254,11 @@ nav {
 	}
 
 	/***** Projects page styles *****/
-
+	.project-display {
+		height: 150px;
+		width: 150px;
+		border-radius: 1px;
+	}
 
 	/***** Skills page styles *****/
 
