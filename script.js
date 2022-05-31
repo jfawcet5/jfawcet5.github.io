@@ -251,21 +251,22 @@ class ProjectsPage {
 	static _projList() {
 		let content = `
 		<div class="project-list">
-			<div class="project" id="messenger-project">
-				<h2>
-				  <a href="https://github.com/jfawcet5/CIS433-CourseProject"><strong>Secure Messenger Application</strong></a>
-				</h2>
-				<div class="box p1"><br><br>Project screenshot goes here</div>
+
+			<div class="project" id="cipher-visualization-project">
+				<h2>Vigenere Cipher Visualization Tool</h2>
+				<a href="https://github.com/maxjhop/VigenereVisualization">
+					<img class="box project-display" src="images/VigenereVisualization.png" />
+				</a>
 				<div class="project-description">
 					<p>Description goes here</p>
 				</div>
 			</div>
 			<div class="spacer"></div>
 
-			<div class="project" id="cipher-visualization-project">
-				<h2>Vigenere Cipher Visualization Tool</h2>
-				<a href="https://github.com/maxjhop/VigenereVisualization">
-					<img class="box project-display" src="images/vigenerevisualization.png" />
+			<div class="project" id="messenger-project">
+				<h2>Secure Messenger Application</h2>
+				<a href="https://github.com/jfawcet5/CIS433-CourseProject">
+					<img class="box project-display" src="images/messenger.png" />
 				</a>
 				<div class="project-description">
 					<p>Description goes here</p>
@@ -285,10 +286,21 @@ class ProjectsPage {
 			<div class="spacer"></div>
 
 			<div class="project" id="pub-sub-project">
-				<h2>
-				  <a href="https://github.com/jfawcet5/CIS415-Project3"><strong>Publisher/Subscriber Server</strong></a>
-				</h2>
-				<div class="box p1"><br><br>Project screenshot goes here</div>
+				<h2>Publisher/Subscriber Server</h2>
+				<a href="https://github.com/jfawcet5/CIS415-Project3">
+					<img class="box project-display" src="images/pub-sub.png" />
+				</a>
+				<div class="project-description">
+					<p>Description goes here</p>
+				</div>
+			</div>
+			<div class="spacer"></div>
+
+			<div class="project" id="interpolation-demo-project">
+				<h2>Polynomial Interpolation Demo</h2>
+				<a href="https://github.com/jfawcet5/Math351-Project">
+					<img class="box project-display" src="images/interpolation-demo.png" />
+				</a>
 				<div class="project-description">
 					<p>Description goes here</p>
 				</div>

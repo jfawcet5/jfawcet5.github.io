@@ -56,7 +56,7 @@ button {
 }
 
 .box {
-	background-color: blue;
+	/*background-color: blue;*/
 	/*grid-area: 1 / 2 / 3 / 2;
 	border: solid 2px black;*/
 	height: 200px;
@@ -139,19 +139,20 @@ nav {
 	grid-row-gap: 1em;
 }
 
-.p1 {
-	grid-area: 2 / 1 / 3 / 2;
+.project-list h2 {
+	grid-area: 1 / 1 / 2 / 3;
 }
 
 .project-description {
-	grid-area: 1 / 2 / 3 / 3;
-	margin: 1.5em 0 0 0;
+	grid-area: 2 / 2 / 3 / 3;
+	margin: 0 0 0 0.5em;
 }
 
 .project-display {
 	height: 300px;
 	width: 300px;
 	border-radius: 1px;
+	grid-area: 2 / 1 / 2 / 2;
 }
 
 /***** Skills page styles *****/
@@ -195,7 +196,9 @@ nav {
 	background-color: blue;
 }
 
+
 /* Media Queries Below This Line */
+
 
 /******* Begin Media Query: Screen width <= 530 px *******/
 @media only screen and (max-width: 530px) {
@@ -258,6 +261,11 @@ nav {
 		height: 150px;
 		width: 150px;
 		border-radius: 1px;
+	}
+
+	.project {
+		grid-template: 1.5rem 3fr / 1fr 2fr;
+		grid-row-gap: 0.25em;
 	}
 
 	/***** Skills page styles *****/
