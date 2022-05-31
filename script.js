@@ -55,7 +55,6 @@ function cycle() {
 	fadeIn();
 }
 
-//setTimeout(fadeOut, 5000);
 timer = setTimeout(cycle, 1000);
 
 let curPage = "Home";
@@ -258,7 +257,18 @@ class ProjectsPage {
 					<img class="box project-display" src="images/vigenerevisualization.png" />
 				</a>
 				<div class="project-description">
-					<p>Description goes here</p>
+					<p>Led a team of four classmates to design and implement an algorithm visualizer for the vigenere cipher, 
+							with the intent of creating a system for cryptography professors at the University of Oregon to use as a 
+							teaching tool. Loosely followed an agile/prototyping software development lifecycle to develop the system over 
+							the course of three weeks.
+					</p>
+					<br>
+					<p>I was responsible for implementing the vigenere cipher encryption/decryption algorithm, animation pacing, 
+							animation control (pause/play, speed up/down, etc.), integration between table highlighting and animation
+							controls, and  project management to meet deadlines and coordinate tasks between team members.
+					</p>
+					<br>
+					<p>Technologies Used: Python 3 and Pygame</p>
 				</div>
 			</div>
 			<div class="spacer"></div>
@@ -280,7 +290,17 @@ class ProjectsPage {
 					<img class="box project-display" src="images/yoon.png" />
 				</a>
 				<div class="project-description">
-					<p>Description goes here</p>
+					<p>Worked on a team of three to design and implement an open-world RPG game for my game programming class.
+						We followed an agile software development lifecycle with the help of Kanban to complete the project over the
+						span of about five weeks.
+					</p>
+					<br>
+					<p>I was responsible for implementing User Interface design and functionality for the main menu, inventory, 
+						 pause menu, skills menu, and cheat menu, enemy behavior and AI, NPC pathfinding, level creation, game progression, 
+						 game state (saving/loading between scenes), and player stats.
+					</p>
+					<br>
+					<p>Technologies Used: Unity Game Engine, C#, and Kanban/Trello</p>
 				</div>
 			</div>
 			<div class="spacer"></div>
