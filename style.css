@@ -141,6 +141,8 @@ nav {
 
 .project a {
 	align-self: center;
+	display: grid;
+	grid-template: 1fr / 1fr;
 }
 
 .project-list h2 {
@@ -156,7 +158,26 @@ nav {
 	height: 300px;
 	width: 300px;
 	border-radius: 1px;
-	grid-area: 2 / 1 / 2 / 2;
+	/*grid-area: 2 / 1 / 2 / 2;*/
+	grid-area: 1 / 1 / 2 / 2;
+}
+
+.overlay {
+	width: 100%;
+	height: 100%;
+	background-color: rgb(30, 180, 70);
+	opacity: 0;
+	grid-area: 1 / 1 / 2 / 2;
+	z-index: 2;
+	transition: 1.5s ease;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+a div.overlay:hover {
+	opacity: 1;
 }
 
 /***** Skills page styles *****/

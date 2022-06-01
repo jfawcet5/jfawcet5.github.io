@@ -254,7 +254,8 @@ class ProjectsPage {
 			<div class="project" id="cipher-visualization-project">
 				<h2>Vigenere Cipher Visualization Tool</h2>
 				<a href="https://github.com/maxjhop/VigenereVisualization">
-					<img class="box project-display" src="images/vigenerevisualization.png" />
+						<div class="overlay"><p>Github Repo</p></div>
+						<img class="box project-display" src="images/vigenerevisualization.png" />
 				</a>
 				<div class="project-description">
 					<p>Led a team of four classmates to design and implement an algorithm visualizer for the vigenere cipher, 
@@ -276,6 +277,7 @@ class ProjectsPage {
 			<div class="project" id="messenger-project">
 				<h2>Secure Messenger Application</h2>
 				<a href="https://github.com/jfawcet5/CIS433-CourseProject">
+					<div class="overlay"><p>Github Repo</p></div>
 					<img class="box project-display" src="images/messenger.png" />
 				</a>
 				<div class="project-description">
@@ -287,6 +289,7 @@ class ProjectsPage {
 			<div class="project" id="yoon-project">
 				<h2>Open-world RPG Game</strong></h2>
 				<a href="https://github.com/jfawcet5/Yoon">
+					<div class="overlay"><p>Github Repo</p></div>
 					<img class="box project-display" src="images/yoon.png" />
 				</a>
 				<div class="project-description">
@@ -308,6 +311,7 @@ class ProjectsPage {
 			<div class="project" id="pub-sub-project">
 				<h2>Publisher/Subscriber Server</h2>
 				<a href="https://github.com/jfawcet5/CIS415-Project3">
+					<div class="overlay"><p>Github Repo</p></div>
 					<img class="box project-display" src="images/pub-sub.png" />
 				</a>
 				<div class="project-description">
@@ -331,6 +335,7 @@ class ProjectsPage {
 			<div class="project" id="interpolation-demo-project">
 				<h2>Polynomial Interpolation Demo</h2>
 				<a href="https://github.com/jfawcet5/Math351-Project">
+					<div class="overlay"><p>Github Repo</p></div>
 					<img class="box project-display" src="images/interpolation-demo.png" />
 				</a>
 				<div class="project-description">
