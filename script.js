@@ -281,7 +281,7 @@ class ProjectsPage {
 					<img class="box project-display" src="images/messenger.png" />
 				</a>
 				<div class="project-description">
-					<p>Description goes here</p>
+					<p>Description coming soon</p>
 				</div>
 			</div>
 			<div class="spacer"></div>
@@ -347,6 +347,29 @@ class ProjectsPage {
 					<br>
 					<p>I was responsible for implementing the user interface, including all functionality related to the buttons, menus, 
 						 point plotting, line rendering, and accurately displaying a dynamic cartesian grid with the ability to zoom and scroll.
+					</p>
+					<br>
+					<p>Technologies Used: Python 3 and Pygame</p>
+				</div>
+			</div>
+			<div class="spacer"></div>
+
+			<div class="project" id="python-games-project">
+				<h2>Arcade Game Clones</h2>
+				<a href="https://github.com/jfawcet5/Python-games">
+					<div class="overlay"><p>Github Repo</p></div>
+					<img class="box project-display" src="images/Joust.jpg" />
+				</a>
+				<div class="project-description">
+					<p>This was a personal project where I created clones of classic arcade games from scratch using the Python 
+						 programming language. The three games I made are: Pong, Space Invader, and Joust (Shown in screenshot).I started 
+						 simple with Pong and gradually worked my way up to Joust.
+					</p>
+					<br>
+					<p>I learned a lot about different techniques for implementing simple games with a fairly object-oriented
+						 approach and managing different tasks related to game functionality (game loop, physics, animation, etc.). There 
+						 are still a few bugs in each of the games and I haven't gotten around to finishing all of the features, but 
+						 I had a lot of fun making them and am happy with how they turned out so far.
 					</p>
 					<br>
 					<p>Technologies Used: Python 3 and Pygame</p>
