@@ -311,7 +311,19 @@ class ProjectsPage {
 					<img class="box project-display" src="images/pub-sub.png" />
 				</a>
 				<div class="project-description">
-					<p>Description goes here</p>
+					<p>Implemented a publisher/subscriber program to simulate the functionality of a server backend for a
+						 fake social media platform. Leveraged thread pools, synchronization, and circular ring buffers in 
+						 order to handle the read/write commands from prewritten publisher/subscriber files to simulate
+						 client behaviors simultaneously.  
+					</p>
+					<br>
+					<p>
+						A 2D array called the topic store contains circular ring buffers called topic queues, which hold topic entries
+						that are written by the publisher threads. Subscriber threads read topic entries from a particular topic queue 
+						and a topic cleanup thread dequeues old topic entries.
+					</p>
+					<br>
+					<p>Technologies Used: C and Make/Makefile</p>
 				</div>
 			</div>
 			<div class="spacer"></div>
@@ -322,7 +334,17 @@ class ProjectsPage {
 					<img class="box project-display" src="images/interpolation-demo.png" />
 				</a>
 				<div class="project-description">
-					<p>Description goes here</p>
+					<p>Worked with a classmate in my Elementary Numerical Analysis class to create a polynomial interpolation 
+						 demo from scratch for our course project submission. Our system uses the Newton algorithm for polynomial 
+						 interpolation to calculate the lowest-degree polynomial that passes through a set of data points defined 
+						 by the user.  
+					</p>
+					<br>
+					<p>I was responsible for implementing the user interface, including all functionality related to the buttons, menus, 
+						 point plotting, line rendering, and accurately displaying a dynamic cartesian grid with the ability to zoom and scroll.
+					</p>
+					<br>
+					<p>Technologies Used: Python 3 and Pygame</p>
 				</div>
 			</div>
 	   </div>`;
