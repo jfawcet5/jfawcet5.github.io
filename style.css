@@ -162,6 +162,10 @@ nav {
 	grid-area: 1 / 1 / 2 / 2;
 }
 
+.technologies {
+	color: green;
+}
+
 .overlay {
 	width: 100%;
 	height: 100%;

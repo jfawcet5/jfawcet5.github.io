@@ -269,7 +269,7 @@ class ProjectsPage {
 							controls, and  project management to meet deadlines and coordinate tasks between team members.
 					</p>
 					<br>
-					<p>Technologies Used: Python 3 and Pygame</p>
+					<p class="technologies">Technologies Used: Python 3, Pygame, Git</p>
 				</div>
 			</div>
 			<div class="spacer"></div>
@@ -281,7 +281,20 @@ class ProjectsPage {
 					<img class="box project-display" src="images/messenger.png" />
 				</a>
 				<div class="project-description">
-					<p>Description coming soon</p>
+					<p>Led a team of two in the design and implementation of a secure messenger application that was created 
+						 for my Computer & Network Security class. Our application implements a simple client-server architecture,
+						 as well as NAT traversal for client-client communication and we used session keys, end-to-end encryption,
+						 cryptographic hashes, and signatures for security. 
+					</p>
+					<br>
+					<p>I was responsible for managing the project timeline and implementing the client and server modules for 
+					   NAT traversal and communication, various parts of the UI (main menu, preferences menu, and chat menu), many
+					   parts of the SQLite database, and parts of the encryption (AES and RSA ciphers). I was also responsible 
+					   for the integration of each of the modules.</p>
+					<br>
+					<p class="technologies">Technologies Used: Python, Tkinter, 
+					<a style="display: inline; color: blue; text-decoration: underline;" href="https://cryptography.io/en/latest/">Cryptography Module</a>, 
+					AWS, SQLite, Git</p>
 				</div>
 			</div>
 			<div class="spacer"></div>
@@ -298,12 +311,12 @@ class ProjectsPage {
 						span of about five weeks.
 					</p>
 					<br>
-					<p>I was responsible for implementing User Interface design and functionality for the main menu, inventory, 
+					<p>I was responsible for implementing the user interface design and functionality for the main menu, inventory, 
 						 pause menu, skills menu, and cheat menu, enemy behavior and AI, NPC pathfinding, level creation, game progression, 
 						 game state (saving/loading between scenes), and player stats.
 					</p>
 					<br>
-					<p>Technologies Used: Unity Game Engine, C#, and Kanban/Trello</p>
+					<p class="technologies">Technologies Used: Unity Game Engine, C#, Kanban/Trello, Git</p>
 				</div>
 			</div>
 			<div class="spacer"></div>
@@ -322,12 +335,12 @@ class ProjectsPage {
 					</p>
 					<br>
 					<p>
-						A 2D array called the topic store contains circular ring buffers called topic queues, which hold topic entries
+						In short, a 2D array called the topic store contains circular ring buffers called topic queues, which hold topic entries
 						that are written by the publisher threads. Subscriber threads read topic entries from a particular topic queue 
 						and a topic cleanup thread dequeues old topic entries.
 					</p>
 					<br>
-					<p>Technologies Used: C and Make/Makefile</p>
+					<p class="technologies">Technologies Used: C, Make/Makefile, Linux</p>
 				</div>
 			</div>
 			<div class="spacer"></div>
@@ -349,7 +362,7 @@ class ProjectsPage {
 						 point plotting, line rendering, and accurately displaying a dynamic cartesian grid with the ability to zoom and scroll.
 					</p>
 					<br>
-					<p>Technologies Used: Python 3 and Pygame</p>
+					<p class="technologies">Technologies Used: Python 3, Pygame, Git</p>
 				</div>
 			</div>
 			<div class="spacer"></div>
@@ -372,7 +385,7 @@ class ProjectsPage {
 						 I had a lot of fun making them and am happy with how they turned out so far.
 					</p>
 					<br>
-					<p>Technologies Used: Python 3 and Pygame</p>
+					<p class="technologies">Technologies Used: Python 3, Pygame</p>
 				</div>
 			</div>
 	   </div>`;
