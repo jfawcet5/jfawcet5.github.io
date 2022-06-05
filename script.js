@@ -115,10 +115,10 @@ class HomePage {
 		let content = `<div class="project-section">
           <h2>Projects</h2>
           <ul>
-            <li><button class="text-button" onclick="scrollToProject('messenger-project')">Secure Messenger Application</button></li>
-            <li><button class="text-button" onclick="scrollToProject('pub-sub-project')">Publisher/Subscriber Server</button></li>
-            <li><button class="text-button" onclick="scrollToProject('yoon-project')">Open-world RPG Game</button></li>
             <li><button class="text-button" onclick="scrollToProject('cipher-visualization-project')">Vigenere Cipher Visualization Tool</button></li>
+            <li><button class="text-button" onclick="scrollToProject('messenger-project')">Secure Messenger Application</button></li>
+            <li><button class="text-button" onclick="scrollToProject('yoon-project')">Open-world RPG Game</button></li>
+            <li><button class="text-button" onclick="scrollToProject('pub-sub-project')">Publisher/Subscriber Server</button></li>
           </ul>
         </div>`;
 		return content;
@@ -251,31 +251,8 @@ class ProjectsPage {
 		let content = `
 		<div class="project-list">
 
-			<div class="project" id="cipher-visualization-project">
-				<h2>Vigenere Cipher Visualization Tool</h2>
-				<a href="https://github.com/maxjhop/VigenereVisualization">
-						<div class="overlay"><p>Github Repo</p></div>
-						<img class="box project-display" src="images/vigenerevisualization.png" />
-				</a>
-				<div class="project-description">
-					<p>Led a team of four classmates to design and implement an algorithm visualizer for the vigenere cipher, 
-							with the intent of creating a system for cryptography professors at the University of Oregon to use as a 
-							teaching tool. Loosely followed an agile/prototyping software development lifecycle to develop the system over 
-							the course of three weeks.
-					</p>
-					<br>
-					<p>I was responsible for implementing the vigenere cipher encryption/decryption algorithm, animation pacing, 
-							animation control (pause/play, speed up/down, etc.), integration between table highlighting and animation
-							controls, and  project management to meet deadlines and coordinate tasks between team members.
-					</p>
-					<br>
-					<p class="technologies">Technologies Used: Python 3, Pygame, Git</p>
-				</div>
-			</div>
-			<div class="spacer"></div>
-
 			<div class="project" id="messenger-project">
-				<h2>Secure Messenger Application</h2>
+				<h2>Secure Messenger Application<p class="project-date">March 2022</p></h2>
 				<a href="https://github.com/jfawcet5/CIS433-CourseProject">
 					<div class="overlay"><p>Github Repo</p></div>
 					<img class="box project-display" src="images/messenger.png" />
@@ -299,54 +276,8 @@ class ProjectsPage {
 			</div>
 			<div class="spacer"></div>
 
-			<div class="project" id="yoon-project">
-				<h2>Open-world RPG Game</strong></h2>
-				<a href="https://github.com/jfawcet5/Yoon">
-					<div class="overlay"><p>Github Repo</p></div>
-					<img class="box project-display" src="images/yoon.png" />
-				</a>
-				<div class="project-description">
-					<p>Worked on a team of three to design and implement an open-world RPG game for my game programming class.
-						We followed an agile software development lifecycle with the help of Kanban to complete the project over the
-						span of about five weeks.
-					</p>
-					<br>
-					<p>I was responsible for implementing the user interface design and functionality for the main menu, inventory, 
-						 pause menu, skills menu, and cheat menu, enemy behavior and AI, NPC pathfinding, level creation, game progression, 
-						 game state (saving/loading between scenes), and player stats.
-					</p>
-					<br>
-					<p class="technologies">Technologies Used: Unity Game Engine, C#, Kanban/Trello, Git</p>
-				</div>
-			</div>
-			<div class="spacer"></div>
-
-			<div class="project" id="pub-sub-project">
-				<h2>Publisher/Subscriber Server</h2>
-				<a href="https://github.com/jfawcet5/CIS415-Project3">
-					<div class="overlay"><p>Github Repo</p></div>
-					<img class="box project-display" src="images/pub-sub.png" />
-				</a>
-				<div class="project-description">
-					<p>Implemented a publisher/subscriber program to simulate the functionality of a server backend for a
-						 fake social media platform. Leveraged thread pools, synchronization, and circular ring buffers in 
-						 order to handle the read/write commands from prewritten publisher/subscriber files to simulate
-						 client behaviors simultaneously.  
-					</p>
-					<br>
-					<p>
-						In short, a 2D array called the topic store contains circular ring buffers called topic queues, which hold topic entries
-						that are written by the publisher threads. Subscriber threads read topic entries from a particular topic queue 
-						and a topic cleanup thread dequeues old topic entries.
-					</p>
-					<br>
-					<p class="technologies">Technologies Used: C, Make/Makefile, Linux</p>
-				</div>
-			</div>
-			<div class="spacer"></div>
-
 			<div class="project" id="interpolation-demo-project">
-				<h2>Polynomial Interpolation Demo</h2>
+				<h2>Polynomial Interpolation Demo<p class="project-date">December 2021</p></h2>
 				<a href="https://github.com/jfawcet5/Math351-Project">
 					<div class="overlay"><p>Github Repo</p></div>
 					<img class="box project-display" src="images/interpolation-demo.png" />
@@ -368,7 +299,7 @@ class ProjectsPage {
 			<div class="spacer"></div>
 
 			<div class="project" id="python-games-project">
-				<h2>Arcade Game Clones</h2>
+				<h2>Arcade Game Clones<p class="project-date">July 2021</p></h2>
 				<a href="https://github.com/jfawcet5/Python-games">
 					<div class="overlay"><p>Github Repo</p></div>
 					<img class="box project-display" src="images/Joust.jpg" />
@@ -388,6 +319,76 @@ class ProjectsPage {
 					<p class="technologies">Technologies Used: Python 3, Pygame</p>
 				</div>
 			</div>
+			<div class="spacer"></div>
+
+			<div class="project" id="cipher-visualization-project">
+				<h2>Vigenere Cipher Visualization Tool<p class="project-date">May 2021</p></h2>
+				<a href="https://github.com/maxjhop/VigenereVisualization">
+						<div class="overlay"><p>Github Repo</p></div>
+						<img class="box project-display" src="images/vigenerevisualization.png" />
+				</a>
+				<div class="project-description">
+					<p>Led a team of four classmates to design and implement an algorithm visualizer for the vigenere cipher, 
+							with the intent of creating a system for cryptography professors at the University of Oregon to use as a 
+							teaching tool. Loosely followed an agile/prototyping software development lifecycle to develop the system over 
+							the course of three weeks.
+					</p>
+					<br>
+					<p>I was responsible for implementing the vigenere cipher encryption/decryption algorithm, animation pacing, 
+							animation control (pause/play, speed up/down, etc.), integration between table highlighting and animation
+							controls, and  project management to meet deadlines and coordinate tasks between team members.
+					</p>
+					<br>
+					<p class="technologies">Technologies Used: Python 3, Pygame, Git</p>
+				</div>
+			</div>
+			<div class="spacer"></div>
+
+			<div class="project" id="yoon-project">
+				<h2>Open-world RPG Game<p class="project-date">May 2021</p></h2>
+				<a href="https://github.com/jfawcet5/Yoon">
+					<div class="overlay"><p>Github Repo</p></div>
+					<img class="box project-display" src="images/yoon.png" />
+				</a>
+				<div class="project-description">
+					<p>Worked on a team of three to design and implement an open-world RPG game for my game programming class.
+						We followed an agile software development lifecycle with the help of Kanban to complete the project over the
+						span of about five weeks.
+					</p>
+					<br>
+					<p>I was responsible for implementing the user interface design and functionality for the main menu, inventory, 
+						 pause menu, skills menu, and cheat menu, enemy behavior and AI, NPC pathfinding, level creation, game progression, 
+						 game state (saving/loading between scenes), and player stats.
+					</p>
+					<br>
+					<p class="technologies">Technologies Used: Unity Game Engine, C#, Kanban/Trello, Git</p>
+				</div>
+			</div>
+			<div class="spacer"></div>
+
+			<div class="project" id="pub-sub-project">
+				<h2>Publisher/Subscriber Server<p class="project-date">May 2020</p></h2>
+				<a href="https://github.com/jfawcet5/CIS415-Project3">
+					<div class="overlay"><p>Github Repo</p></div>
+					<img class="box project-display" src="images/pub-sub.png" />
+				</a>
+				<div class="project-description">
+					<p>Implemented a publisher/subscriber program to simulate the functionality of a server backend for a
+						 fake social media platform. Leveraged thread pools, synchronization, and circular ring buffers in 
+						 order to handle the read/write commands from prewritten publisher/subscriber files to simulate
+						 client behaviors simultaneously.  
+					</p>
+					<br>
+					<p>
+						In short, a 2D array called the topic store contains circular ring buffers called topic queues, which hold topic entries
+						that are written by the publisher threads. Subscriber threads read topic entries from a particular topic queue 
+						and a topic cleanup thread dequeues old topic entries.
+					</p>
+					<br>
+					<p class="technologies">Technologies Used: C, Make/Makefile, Linux</p>
+				</div>
+			</div>
+			<div class="spacer"></div>
 	   </div>`;
 		return content;
 	}
