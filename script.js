@@ -102,7 +102,7 @@ class HomePage {
 		let content = `<div class="about-section">
           <h2>About</h2>
           <img class="box right" src="images/picture2.jpeg" />
-          <p class="about-p">Hi, I'm Joshua Fawcett. I am recent graduate from the University of Oregon, with a major in 
+          <p class="about-p">Hi, I'm Joshua Fawcett. I am a recent graduate from the University of Oregon, with a major in 
           Computer and Information Science and minor in Mathemetics. I'm a life-long learner who loves to read textbooks, 
           write code, tackle challenging problems, and help friends with their math, physics, and writing.<br><br>In my free 
           time, I enjoy spending time with friends and family, bowling, hiking, and playing/making video games.<br><br>Some 
