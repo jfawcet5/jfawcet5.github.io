@@ -102,8 +102,8 @@ class HomePage {
 		let content = `<div class="about-section">
           <h2>About</h2>
           <img class="box right" src="images/picture2.jpeg" />
-          <p class="about-p">Hi, I'm Joshua Fawcett. I am currently a senior at the University of Oregon, majoring in 
-          Computer and Information Science and minoring in Mathemetics. I'm a life-long learner who loves to read textbooks, 
+          <p class="about-p">Hi, I'm Joshua Fawcett. I am recent graduate from the University of Oregon, with a major in 
+          Computer and Information Science and minor in Mathemetics. I'm a life-long learner who loves to read textbooks, 
           write code, tackle challenging problems, and help friends with their math, physics, and writing.<br><br>In my free 
           time, I enjoy spending time with friends and family, bowling, hiking, and playing/making video games.<br><br>Some 
           of my current reading material includes: <span id="cycle-span" style="opacity: 0;"></span></p>
@@ -357,8 +357,8 @@ class ProjectsPage {
 					</p>
 					<br>
 					<p>I was responsible for implementing the user interface design and functionality for the main menu, inventory, 
-						 pause menu, skills menu, and cheat menu, enemy behavior and AI, NPC pathfinding, level creation, game progression, 
-						 game state (saving/loading between scenes), and player stats.
+						 pause menu, skills menu, and cheat menu, I also worked on enemy behavior and AI, NPC pathfinding, level creation, 
+						 game progression, game state (saving/loading between scenes), and player stats.
 					</p>
 					<br>
 					<p class="technologies">Technologies Used: Unity Game Engine, C#, Kanban/Trello, Git</p>
