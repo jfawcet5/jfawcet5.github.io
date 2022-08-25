@@ -82,6 +82,7 @@ header h1, nav {
 
 nav {
 	float: right;
+	border-bottom: solid black 1px;
 }
 
 .nav-button {
@@ -230,6 +231,14 @@ div.overlay:hover {
 .percent-bar {
 	height: 100%;
 	background-color: blue;
+}
+
+.resume-link {
+	border: solid black 1px;
+	padding: 0.5em;
+	border-radius: 1em;
+	font-size: 0.75em;
+	background-color: lightgreen;
 }
 
 

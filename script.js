@@ -1,3 +1,8 @@
+window.onload = function(event) {
+	gotoPage("Home");
+	console.log(event);
+}
+
 let bookList = ["Compilers: Principles, Techniques, & Tools", 
 				"Interactive Computer Graphics", 
 				"Machine Learning: A Probabilistic Perspective", 
@@ -57,7 +62,7 @@ function cycle() {
 
 timer = setTimeout(cycle, 1000);
 
-let curPage = "Home";
+let curPage = "";
 
 function gotoPage(page) {
 	let content;
@@ -151,6 +156,12 @@ class HomePage {
           <p>Email: joshfawcettshs10@gmail.com</p>
           <p>Github: <a href="https://github.com/jfawcet5">github.com/jfawcet5</a></p>
           <p>LinkedIn: <a href="https://www.linkedin.com/in/jfawcet5">linkedin.com/jfawcet5</a></p>
+          <br>
+          <p>
+        		<a href='images/Joshua_Fawcett_Resume.pdf' target='_blank' class='resume-link'>
+        			<strong>Resume <i class="fa-solid fa-1x fa-arrow-up-right-from-square" title="Resume Link"></i></strong>
+        		</a>
+        	</p>
         </div>`;
         return content;
 	}
@@ -166,7 +177,11 @@ class SkillsPage {
         		${SkillsPage._langList()}
         		${SkillsPage._toolList()}
         	</div>
-        	<h2><a href='images/Joshua_Fawcett_Resume.pdf' target='_blank'><strong>Click here for resume</strong></a></h2>
+        	<h2>
+        		<a href='images/Joshua_Fawcett_Resume.pdf' target='_blank' class='resume-link'>
+        			<strong>Resume <i class="fa-solid fa-1x fa-arrow-up-right-from-square" title="Resume Link"></i></strong>
+        		</a>
+        	</h2>
     	</div>`;
 
 		return content;
