@@ -3,12 +3,10 @@ window.onload = function(event) {
 	console.log(event);
 }
 
-let bookList = ["Compilers: Principles, Techniques, & Tools", 
+let bookList = ["The Art of WebAssembly", 
 				"Interactive Computer Graphics", 
-				"Machine Learning: A Probabilistic Perspective", 
-				"Clean Code: A Handbook of Agile Software Craftsmanship", 
-				"Secure and Resilient Software Development", 
-				"Artificial Intelligence: A Modern Approach"];
+				"C#11 and .NET7", 
+				"Clean Code: A Handbook of Agile Software Craftsmanship"];
 
 let index = -1;
 
