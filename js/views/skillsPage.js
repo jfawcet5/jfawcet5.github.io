@@ -1,101 +1,68 @@
+/**
+ * skillsPage.js
+ * -------------
+ * Defines the SkillsPage class, extending the base 'PageView' class
+ * Displays a categorized list of technical skills using reusable card components.
+ *
+ * Exports:
+ * - SkillsPage: A class representing the skills view of the application.
+ * 
+ * Dependencies:
+ * - views/pageView.js (base class)
+ * - components/itemCard.js (used to render grouped skill cards)
+ * 
+ * Usage: 
+ * - Triggered by the router when hash is 'skills'.
+ */
+
 import { PageView } from "./pageView.js";
+
+import * as UIFactory from "../components/index.js";
 
 export class SkillsPage extends PageView {
 	_GetContents() {
-		const wrapper = document.createElement("div");
-
 		const aboutSection = this._GetSkillsSection();
 
-		wrapper.appendChild(aboutSection);
-
-		return wrapper;
+		return aboutSection;
 	}
 
 	_GetSkillsSection() {
-		const section = document.createElement("div");
+		const skillContainer = document.createElement("div");
 
-		let content = `<h2>Skills</h2>
-        	<div id="skills-grid" class="skills-grid">
-        		${this._GetOSList()}
-        		${this._GetLanguageList()}
-        		${this._GetToolList()}
-        	</div>
-        	<h2>
-        		<a href='images/Joshua_Fawcett_Resume.pdf' target='_blank' class='resume-link'>
-        			<strong>Resume <i class="fa-solid fa-1x fa-arrow-up-right-from-square" title="Resume Link"></i></strong>
-        		</a>
-        	</h2>`;
+		const section1 = document.createElement("div");
 
-        section.innerHTML = content;
+        const header = document.createElement("h2");
+        header.innerText = "Skills";
 
-		return section;
-	}
+        skillContainer.appendChild(header);
 
-	_GetOSList() {
-		let content = `
-			<div class="os-list">
-                <h3>Operating Systems</h3>
-                <ul>
-                    <li>Windows</li>
-                    <li>Unix/Linux</li>
-                    <li>Mac</li>
-                </ul>
-            </div>`;
+        //section1.innerHTML = content;
 
-        return content;
-	}
+        const cardContainer = document.createElement("div");
+        cardContainer.className = "carousel-container";
 
-	_GetLanguageList() {
-		let content = `            
-		<div class="language-list">
-            <h3 style="margin: 0em 0em 0.5em 0em">Languages</h3>
-            <div class="languages">
-                <p>Python
-                	<div class="skill-bar"><div class="percent-bar" style="width: 85%"></div></div>
-                </p>
-                <p>C
-                	<div class="skill-bar"><div class="percent-bar" style="width: 75%"></div></div>
-                </p>
-                <p>JavaScript
-                	<div class="skill-bar"><div class="percent-bar" style="width: 70%"></div></div>
-                </p>
-                <p>HTML
-                	<div class="skill-bar"><div class="percent-bar" style="width: 70%"></div></div>
-                </p>
-                <p>CSS
-                	<div class="skill-bar"><div class="percent-bar" style="width: 70%"></div></div>
-                </p>
-                <p>C#
-                	<div class="skill-bar"><div class="percent-bar" style="width: 65%"></div></div>
-                </p>
-                <p>C++
-                	<div class="skill-bar"><div class="percent-bar" style="width: 57%"></div></div>
-                </p>
-                <p>Swift
-                	<div class="skill-bar"><div class="percent-bar" style="width: 49%"></div></div>
-                </p>
-            </div>
-        </div>`;
-        return content;
-	}
+        const carousel = document.createElement("div");
+        carousel.className = "card-carousel";
 
-	_GetToolList() {
-		let content = `            
-			<div class="tools-list">
-	            <h3>Tools</h3>
-	            <ul>
-	                <li>Bash</li>
-	                <li>Git</li>
-	                <li>Github</li>
-	                <li>Command Line</li>
-	                <li>Vim</li>
-	                <li>Unity</li>
-	                <li>MS Office</li>
-	                <li>Sqlite</li>
-	                <li>Kanban</li>
-	                <li>x86-64</li>
-	            </ul>
-	        </div>`;
-		return content;
+        const langs = ["Python", "C", "C++", "C#", 
+        	"JavaScript", "HTML", "CSS"];
+
+        const tools = ["Git", "Linux", "Make", "Unity", "Trello/Kanban"];
+
+        const other = [".NET", "WPF", "XAML", "AWS", "Elastic"];
+
+        const langCard = UIFactory.createSkillCard("Languages", langs);
+        const toolCard = UIFactory.createSkillCard("Tools", tools);
+        const otherCard = UIFactory.createSkillCard("Other", other);
+
+        carousel.appendChild(langCard);
+        carousel.appendChild(toolCard);
+        carousel.appendChild(otherCard);
+
+        cardContainer.appendChild(carousel);
+
+        skillContainer.appendChild(cardContainer);
+
+		return skillContainer;
 	}
 }

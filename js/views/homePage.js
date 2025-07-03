@@ -1,3 +1,19 @@
+/**
+ * homePage.js
+ * -----------
+ * Defines the HomePage class, which extends the base 'PageView' class.
+ * Overrides '_GetContents()' to provide content for the SPA's home page.
+ *
+ * Exports:
+ * - HomePage: A class representing the home view of the application.
+ * 
+ * Dependencies:
+ * - views/pageView.js (base class)
+ * 
+ * Usage: 
+ * - Used by 'routing.js' to render the home page when the hash is set to 'home'.
+ */
+
 import { PageView } from "./pageView.js";
 
 export class HomePage extends PageView {
@@ -21,7 +37,7 @@ export class HomePage extends PageView {
 		const section = document.createElement("div");
 
 		const contents = `<h2>About</h2>
-          <img class="box right" src="images/picture2.jpeg" />
+          <img class="box right" src="resources/images/picture2.jpeg" />
           <p class="about-p">Hi, I'm Joshua Fawcett. I am a recent graduate from the University of Oregon, with a major in 
           Computer and Information Science and minor in Mathemetics. I'm a life-long learner who loves to read textbooks, 
           write code, tackle challenging problems, and help friends with their math, physics, and writing.<br><br>In my free 

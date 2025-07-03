@@ -4,7 +4,7 @@
 }
 
 html {
-	background: url("./images/bg2.jpg") no-repeat center center fixed;
+	background: url("./resources/images/bg2.jpg") no-repeat center center fixed;
 	image-rendering: -webkit-optimize-contrast;
 	background-size: cover;
 	height: 100%;
@@ -35,6 +35,122 @@ a {
 	font-weight: normal;
 }
 
+.carousel-container {
+	position: relative;
+	width: 100%;
+	max-width: 900px;
+	margin: auto;
+	display: flex;
+	align-items: center;
+	gap: 0.5em;
+}
+
+.card-carousel {
+	display: flex;
+	overflow-x: auto;
+	scroll-behavior: smooth;
+	gap: 1em;
+	padding: 1em;
+	flex: 1;
+}
+
+
+/*************************/
+/*** Skill Card Styles ***/
+/*************************/
+
+
+/* skill card container */
+.skill-card {
+	display: flex;           /* orient child items using flex box */
+	flex-direction: column;  /* stack children vertically */
+	flex: 0 0 auto;          /* flex item properties: no grow/shrink, auto basis */
+	width: 300px;            /* target width */
+	border-radius: 10px;     /* rounded edges */
+	border: 1px solid black; /* thin black border */
+	overflow: hidden;        /* hide any overflow */
+	max-height: 350px;       /* prevent from stretching to fit all items */
+	box-shadow: 0 2px 3px black; /* black shadow on bottom edge of the card */
+	transition: 1s ease;     /* ease between style changes/animations */
+}
+
+/* skill card hover styles */
+.skill-card:hover {
+	background-color: #eee;
+}
+
+/* skill card banner style header */
+.skill-card-header {
+	background-color: rgb(90, 190, 90); /* green background */
+	margin: 0;                          /* no margin */
+	padding: 1em;                       /* uniform padding */
+	border-bottom: 1px solid black;     /* black border on bottom edge */
+}
+
+/* skill card body container */
+.skill-card-body {
+	flex: 1 1 auto;      /* flex item properties: grow/shrink, auto basis */
+	overflow-y: scroll;  /* enable vertical scroll for overflow content */
+	padding: 0.25em 0;    /* pad top and bottom */
+	margin: 0;           /* no margin */
+}
+
+/* skill card item list content */
+.skill-card-item-list {
+	margin: 0;            /* no margin */
+	padding: 0 0 0.5em 0; /* slight padding on bottom */
+	list-style: none;     /* no list styling for <ul> element */
+}
+
+/* list item styles */
+.skill-card-item-list li {
+	padding: 0.5em;                     /* uniform padding */
+	border-bottom: 1px solid lightgrey; /* light border between list items */
+}
+
+
+/*************************/
+/*** Skill Card Styles ***/
+/*************************/
+
+
+.scroll-list-box {
+	flex: 0 0 auto;
+	width: 300px;
+	border: 1px solid #ccc;
+	border-radius: 10px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+	overflow: hidden;
+	font-family: sans-serif;
+}
+
+.scroll-list-box-header {
+	background-color: #f0f0f0;
+	padding: 1em;
+	font-weight: bold;
+	border-bottom: 1px solid #ccc;
+	margin: 0;
+}
+
+.scroll-list-box-body {
+	max-height: 200px;
+	overflow-y: scroll;
+	padding: 1em;
+}
+
+.card-item-list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.card-item-list li {
+	padding: 0.5em 0;
+	border-bottom: 1px solid #eee;
+}
+
+
+
 button {
 	border: none;
 	color: black;
@@ -42,6 +158,7 @@ button {
 }
 
 .content {
+	max-width: 100%;
 	flex-basis: 60em;
 	padding: 1em 1em 0.5em 1em;
 	background-color: rgba(255, 255, 255, 0.88);

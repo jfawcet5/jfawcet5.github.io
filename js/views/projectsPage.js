@@ -1,14 +1,42 @@
 import { PageView } from "./pageView.js";
+import { fetchProjectDetails } from "../utils/fileService.js";
+import * as UIFactory from "../components/index.js";
 
 export class ProjectsPage extends PageView {
+
+	constructor() {
+		super();
+		this.projectList = document.createElement("div");
+		this.projectList.className = "project-list";
+	}
+
 	_GetContents() {
 		const wrapper = document.createElement("div");
 
 		const aboutSection = this._GetProjectSection();
+		//this._wrapper.innerHTML = "<h2>Projects</h2><br><p>Here's a list of some of the projects I've worked on over the years.</p>"
+
+		//this._LoadProjectsAsync();
 
 		wrapper.appendChild(aboutSection);
 
+		//return this.projectList;
 		return wrapper;
+	}
+
+	async _LoadProjectsAsync() {
+		try {
+			const projects = await fetchProjectDetails();
+			const projectCards = projects.map(proj => UIFactory.createProjectCard(proj));
+			for (const project of projectCards) {
+				this.projectList.appendChild(UIFactory.createSpacer());
+				this.projectList.appendChild(project);
+			}
+		}
+		catch (e) {
+			console.error("Error loading projects: ", e);
+			this.projectList.innerHTML = "<p>Failed to load projects</p>";
+		}
 	}
 
 	_GetProjectSection() {
@@ -35,10 +63,10 @@ export class ProjectsPage extends PageView {
 				<h2>Secure Messenger Application<p class="project-date">March 2022</p></h2>
 				<a href="https://github.com/jfawcet5/CIS433-CourseProject">
 					<div class="overlay"><p>Github Repo</p></div>
-					<img class="box project-display" src="images/messenger.png" />
+					<img class="box project-display" src="resources/images/messenger.png" />
 				</a>
 				<div class="project-description">
-					<p>Led a team of two in the design and implementation of a secure messenger application that was created 
+					<p>Collaborated with a teammate in the design and implementation of a secure messenger application that was created 
 						 for my Computer & Network Security class. Our application implements a simple client-server architecture,
 						 as well as NAT traversal for client-client communication and we used session keys, end-to-end encryption,
 						 cryptographic hashes, and signatures for security. 
@@ -60,7 +88,7 @@ export class ProjectsPage extends PageView {
 				<h2>Polynomial Interpolation Demo<p class="project-date">December 2021</p></h2>
 				<a href="https://github.com/jfawcet5/Math351-Project">
 					<div class="overlay"><p>Github Repo</p></div>
-					<img class="box project-display" src="images/interpolation-demo.png" />
+					<img class="box project-display" src="resources/images/interpolation-demo.png" />
 				</a>
 				<div class="project-description">
 					<p>Worked with a classmate in my Elementary Numerical Analysis class to create a polynomial interpolation 
@@ -82,7 +110,7 @@ export class ProjectsPage extends PageView {
 				<h2>Arcade Game Clones<p class="project-date">July 2021</p></h2>
 				<a href="https://github.com/jfawcet5/Python-games">
 					<div class="overlay"><p>Github Repo</p></div>
-					<img class="box project-display" src="images/Joust.jpg" />
+					<img class="box project-display" src="resources/images/Joust.jpg" />
 				</a>
 				<div class="project-description">
 					<p>This was a personal project where I created clones of classic arcade games from scratch using the Python 
@@ -105,7 +133,7 @@ export class ProjectsPage extends PageView {
 				<h2>Vigenere Cipher Visualization Tool<p class="project-date">May 2021</p></h2>
 				<a href="https://github.com/maxjhop/VigenereVisualization">
 						<div class="overlay"><p>Github Repo</p></div>
-						<img class="box project-display" src="images/vigenerevisualization.png" />
+						<img class="box project-display" src="resources/images/vigenerevisualization.png" />
 				</a>
 				<div class="project-description">
 					<p>Led a team of four classmates to design and implement an algorithm visualizer for the vigenere cipher, 
@@ -128,7 +156,7 @@ export class ProjectsPage extends PageView {
 				<h2>Open-world RPG Game<p class="project-date">May 2021</p></h2>
 				<a href="https://github.com/jfawcet5/Yoon">
 					<div class="overlay"><p>Github Repo</p></div>
-					<img class="box project-display" src="images/yoon.png" />
+					<img class="box project-display" src="resources/images/yoon.png" />
 				</a>
 				<div class="project-description">
 					<p>Worked on a team of three to design and implement an open-world RPG game for my game programming class.
@@ -150,7 +178,7 @@ export class ProjectsPage extends PageView {
 				<h2>Publisher/Subscriber Server<p class="project-date">May 2020</p></h2>
 				<a href="https://github.com/jfawcet5/CIS415-Project3">
 					<div class="overlay"><p>Github Repo</p></div>
-					<img class="box project-display" src="images/pub-sub.png" />
+					<img class="box project-display" src="resources/images/pub-sub.png" />
 				</a>
 				<div class="project-description">
 					<p>Implemented a publisher/subscriber program to simulate the functionality of a server backend for a

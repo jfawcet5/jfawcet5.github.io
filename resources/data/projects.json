@@ -1,0 +1,111 @@
+[
+	{
+		"id": "messenger-project",
+		"title": "Secure Messenger Application",
+		"date": {
+			"label": "March 2022",
+			"value": "2022-03"
+		},
+		"description": "",
+		"image": "resources/images/messenger.png",
+		"repoLink": "https://github.com/jfawcet5/CIS433-CourseProject",
+		"skills": [
+			"Python",
+			"Tkinter",
+			"AWS",
+			"SQLite",
+			"Git",
+			{
+				"id": "py-cryptography",
+				"label": "Cryptography Module",
+				"link": "https://cryptography.io/en/latest/"
+			}
+		],
+		"tags": []
+	},
+	{
+		"id": "interpolation-demo-project",
+		"title": "Polynomial Interpolation Demo",
+		"date": {
+			"label": "December 2021",
+			"value": "2021-12"
+		},
+		"description": "",
+		"image": "resources/images/interpolation-demo.png",
+		"repoLink": "https://github.com/jfawcet5/Math351-Project",
+		"skills": [
+			"Python",
+			"Pygame",
+			"Git"
+		],
+		"tags": []
+	},
+	{
+		"id": "python-games-project",
+		"title": "Arcade Game Clones",
+		"date": {
+			"label": "July 2021",
+			"value": "2021-07"
+		},
+		"description": "",
+		"image": "resources/images/Joust.png",
+		"repoLink": "https://github.com/jfawcet5/Python-games",
+		"skills": [
+			"Python",
+			"Pygame"
+		],
+		"tags": []
+	},
+	{
+		"id": "cipher-visualization-project",
+		"title": "Vigenere Cipher Visualization Tool",
+		"date": {
+			"label": "May 2021",
+			"value": "2021-05"
+		},
+		"description": "",
+		"image": "resources/images/vigenerevisualization.png",
+		"repoLink": "https://github.com/maxjhop/VigenereVisualization",
+		"skills": [
+			"Python",
+			"Pygame",
+			"Git"
+		],
+		"tags": []
+	},
+	{
+		"id": "yoon-project",
+		"title": "Open-world RPG Game",
+		"date": {
+			"label": "May 2021",
+			"value": "2021-05"
+		},
+		"description": "",
+		"image": "resources/images/yoon.png",
+		"repoLink": "https://github.com/jfawcet5/Yoon",
+		"skills": [
+			"C#",
+			"Unity",
+			"Trello/Kanban",
+			"Git"
+		],
+		"tags": []
+	},
+	{
+		"id": "pub-sub-project",
+		"title": "Publisher/Subscriber Server",
+		"date": {
+			"label": "May 2020",
+			"value": "2020-05"
+		},
+		"description": "",
+		"image": "resources/images/pub-sub.png",
+		"repoLink": "https://github.com/jfawcet5/CIS415-Project3",
+		"skills": [
+			"C",
+			"Make/Makefile",
+			"Linux"
+		],
+		"tags": []
+	}
+]
