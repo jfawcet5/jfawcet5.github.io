@@ -97,7 +97,7 @@ export class HomePage extends PageView {
           <p>LinkedIn: <a href="https://www.linkedin.com/in/jfawcet5">linkedin.com/jfawcet5</a></p>
           <br>
           <p>
-        		<a href='images/Joshua_Fawcett_Resume.pdf' target='_blank' class='resume-link'>
+        		<a href='resources/Joshua_Fawcett_Resume.pdf' target='_blank' class='resume-link'>
         			<strong>Resume <i class="fa-solid fa-1x fa-arrow-up-right-from-square" title="Resume Link"></i></strong>
         		</a>
         	</p>`
